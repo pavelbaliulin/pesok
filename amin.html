@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="dran"></div>
+    <div class="vodokanal"></div>
+    <div class="bestoloch"></div>
+    <style>
+      .dran {
+        border: 40px solid transparent;
+        border-top: 40px solid black;
+        width: 1px;
+        margin: auto;
+        animation: kv1 5s reverse infinite;
+      }
+      .vodokanal {
+        border: 40px solid transparent;
+        border-bottom: 40px solid black;
+        width: 1px;
+        margin: auto;
+
+        animation: kv2 5s normal infinite;
+      }
+      .bestoloch {
+        width: 5px;
+        height: 5px;
+        background: black;
+        margin: auto;
+        position: relative;
+        top: -123px;
+        animation: dich 1s normal infinite;
+      }
+
+      @keyframes dich {
+        0% {
+          top: -123px;
+        }
+        100% {
+          top: -42px;
+        }
+      }
+      @keyframes kv1 {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      @keyframes kv2 {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </body>
+</html>
